@@ -1,0 +1,199 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+ font-family: 'huawenheiti';
+ src:url(hwht.ttf) format('truetype');
+ font-weight:normal;
+ font-style:normal;
+}
+
+body{ 
+    font-family:"STHeiti","huawenheiti","Helvetica Neue","Microsoft YaHei",Helvetica,Arial,sans-serif;
+}
+
+a:link{  text-decoration:none; outline:none;}
+a:visited{ text-decoration:none; outline:none;}
+a:hover{  text-decoration:none; outline:none;}
+a:focus { -moz-outline-style: none; outline:none;}
+a:actived{ text-decoration:none; outline:none;}
+
+ul,li{ list-style:none; margin:0; padding:0;}
+
+.overflow-xh{overflow-x: hidden;}
+
+/*padding*/
+.pdl0{ padding-left: 0 !important;}
+.pdr0{ padding-right: 0 !important;}
+.pdl10{ padding-left: 10px;}
+.pdr10{ padding-right: 10px;}
+.mb0{ margin-bottom: 0 !important;}
+
+/*字体*/
+.Tahoma{ font-family:Tahoma;}
+.Arial { font-family:Arial;}
+.YaHei { font-family:"微软雅黑","宋体";}
+.Song { font-family:"宋体";}
+.Snicsn { font-family:snicsn;}
+
+/*分页*/
+.page{ text-align:right;}
+.page a{ padding:10px 10px; color:#636363!important; background:#fff; margin:0px 1px 0 0; border-radius: 5px; border:1px solid #eee; }
+.page a.cur,.page a:hover{ color:#fff!important; background:#239aee;}
+.page a.cur:link,.page a.cur:visited{ color:#fff;}
+.page a.curz,.page a.curz:link,.page a.curz:visited{ color: #d2d2d7!important;}
+.page a.curz:hover{color:#fff!important; background:#239aee;}
+
+.container{
+    max-width: 960px;
+}
+
+.header{
+    width: 100%;
+    min-height: 78px;
+    border-bottom: 1px solid #e5e5e5;
+    background: url("../imgs/header_top_bg2.png") no-repeat top right;
+    background-size: auto 100%;
+    background-color: #fff;
+}
+
+.header h1{
+    margin: 0;
+    padding: 0;
+    padding-top: 5px;
+     background: url("../imgs/header_top_bg1.png") no-repeat right 5px;
+}
+
+.header h1 .logot{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.header a,
+.header a:hover{
+    border:none;
+    text-decoration: none;
+    outline: none;
+}
+
+
+.btn-tou{
+	color:#fff;
+	background-color: #f76d02;
+	border-color: #f76d02;
+}
+.btn-tou.active,
+.btn-tou.focus,
+.btn-tou:active,
+.btn-tou:focus,
+.btn-tou:hover,
+.open>.dropdown-toggle.btn-tou{
+	color:#fff;
+	background-color: #ff8c33;
+	border-color: #ff8c33;
+}
+.btn-tou.active,
+.btn-tou:active,
+.open>.dropdown-toggle.btn-tou{
+	background-image:none
+}
+.btn-tou.disabled,
+.btn-tou.disabled.active,
+.btn-tou.disabled.focus,
+.btn-tou.disabled:active,
+.btn-tou.disabled:focus,
+.btn-tou.disabled:hover,
+.btn-tou[disabled],
+.btn-tou[disabled].active,
+.btn-tou[disabled].focus,
+.btn-tou[disabled]:active,
+.btn-tou[disabled]:focus,
+.btn-tou[disabled]:hover,
+fieldset[disabled] .btn-tou,
+fieldset[disabled] .btn-tou.active,
+fieldset[disabled] .btn-tou.focus,
+fieldset[disabled] .btn-tou:active,
+fieldset[disabled] .btn-tou:focus,
+fieldset[disabled] .btn-tou:hover{
+	background-color: #ff8c33;
+	border-color: #ff8c33;
+}
+.btn-tou .badge{
+	color:#f0ad4e;
+	background-color:#fff
+}
+
+/*fu*/
+.fuzong{
+	display:none;
+	background-color:rgba(45,47,51,0.8);
+	position:fixed;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	z-index:2;
+	padding-left:10px;
+	padding-right:10px;	
+	overflow-y:auto;
+}
+
+.fuzi{
+	max-width:960px;
+	position:relative;
+	z-index:3;
+	margin:30px auto;
+	-webkit-transition:all .5s;
+	-moz-transition:all .5s;
+	-ms-transition:all .5s;
+	-o-transition:all .5s;
+	transition:all .5s;
+	opacity:0;
+	-webkit-transform: translate(0,-60px);
+	-moz-transform: translate(0,-60px);
+	-ms-transform: translate(0,-60px);
+	-o-transform: translate(0,-60px);
+	transform: translate(0,-60px);
+}
+.fuzi.futrans{
+	-webkit-transition:all .5s;
+	-moz-transition:all .5s;
+	-ms-transition:all .5s;
+	-o-transition:all .5s;
+	transition:all .5s;
+	opacity:1;
+	-webkit-transform: translate(0,0);
+	-moz-transform: translate(0,0);
+	-ms-transform: translate(0,0);
+	-o-transform: translate(0,0);
+	transform: translate(0,0);
+}
+
+.fuzi_main{
+	width:100%;
+	border-radius:10px;
+	background-color:#fff;
+	position:relative;
+}
+
+.fuzi_main h2{
+	margin:0;
+	padding:0;
+	height:69px;
+	line-height:72px;
+	border-bottom:1px solid #ddd;
+	color:#999;
+	font-size:24px;
+	text-align:center;
+	position:relative;
+}
+
+.fuzi_main .closen,.fuzi_main .closen:hover{
+	color:#dcdcdc;
+	font-size:30px;
+	position:absolute;
+	top:20px;
+	right:20px;
+}
+
+
+

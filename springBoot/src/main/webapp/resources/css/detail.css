@@ -1,0 +1,178 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+    background-color: #f8f8f8;
+}
+
+/*detailheader*/
+.detailheader{
+    background-color: #fff;
+    padding-top:25px;
+    padding-bottom: 35px;
+}
+
+.detailheader .delogo{
+    display: block;
+    width: 220px;
+    height: 120px;
+    background-color: #f8f8f8;
+    border:1px solid #e5e5e5;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    margin-bottom: 15px;
+}
+
+.detailheader .delogo figure{
+    display: block;
+    position: relative;
+    width: 108px;
+    height: 56px;
+    overflow: hidden;
+    margin: 25px auto;
+}
+
+.detailheader .delogo figure img{
+    display: block;
+    width: 108px;
+    height: 112px;
+    position: absolute;
+    top: -56px;
+}
+
+.detailheader span{
+    display: block;
+    width: 220px;
+    text-align: center;
+}
+
+.detailheader span a{
+    color: #f76d02;
+    font-size: 16px;
+}
+
+.detailheader h2{
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
+    font-weight: bold;
+    color: #636363; 
+    margin-bottom: 20px;
+}
+
+.detailheader h2 strong{
+    font-family: 'Arial';
+    font-weight: normal;
+    font-size: 36px;
+    font-style: italic;
+    color: #239aee;
+    position: relative;
+    top: 2px;
+    margin-left: 10px;
+}
+
+.detailheader .detaillist{
+    width: 50%;
+    float: left;
+}
+
+.detailheader .detaillist dl:before,
+.detailheader .detaillist dl:after{
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.detailheader .detaillist dl{
+    color: #636363;
+    font-weight: normal;
+    display: block;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.detailheader .detaillist dl dt,
+.detailheader .detaillist dl dd{
+    font-weight: normal;
+    float: left;
+    line-height: 2.2;
+}
+
+.detailheader .detaillist dl dt{
+    width: 22%;
+}
+
+.detailheader .detaillist dl dd{
+    overflow: hidden;
+    width: 78%;
+}
+
+/*detailmainhead*/
+.detailmainhead{
+    background-color: #f6f6f6;
+    border-top:1px solid #f9f9f9;
+    text-align: center;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.2);
+    font-size: 16px;
+}
+
+.detailmainhead nav ul:before,
+.detailmainhead nav ul:after{
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.detailmainhead nav ul li{
+    display: block;
+    float: left;
+    width: 20%;
+    padding-top:20px;
+    padding-bottom: 20px;
+}
+
+.detailmainhead nav ul li a{
+    color: #636363;
+    padding: 13px 18px;
+    border-radius: 5px;
+}
+
+.detailmainhead nav ul li a:hover{
+    color: #f76d02;
+}
+
+.detailmainhead nav ul li.active a{
+    color: #fff;
+    background-color: #f76d02;
+}
+
+/*detailmainsec*/
+.detailmainsec_zong{
+    width: 600%;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+    left: 0;
+}
+
+.detailmainsec{ 
+    width: 100%;
+    min-height: 300px;
+    float: left;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.detailmainsec.active{}
+
+.detailmainsec.sjfx{}
+.detailmainsec.sjfx > div{
+    margin-bottom: 20px;
+}
+.detailmainsec.sjfx > div > section{
+    background-color: #fff;
+    height: 370px;
+    box-shadow: 0 0 5px rgba(12,6,14,0.1);
+}
+.detailmainsec.sjfx > div:nth-child(3) > section,
+.detailmainsec.sjfx > div:nth-child(4) > section{
+    height: 390px;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+<title>detail</title>
+<!-- Bootstrap -->
+<link href="../dist/css/bootstrap.min.css" rel="stylesheet" />
+<link href="../css/default.css" rel="stylesheet" />
+<link href="../css/detail.css" rel="stylesheet" />
+<script src="../js/jquery-1.11.2.min.js"></script>
+<script src="../dist/js/bootstrap.min.js"></script>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+  <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.jss"></script>
+  <script>
+      alert("该页面不兼容IE8及更低版本浏览器\n请升级IE浏览器或使用其他现代浏览器");
+  </script>
+<![endif]-->
+</head>
+<body>
+    <!--header-->
+    <header class="header">
+        <div class="container">
+            <h1>
+                <a href="index.html">
+                    <img class="logo" src="../imgs/logo_zi.png" alt="" />
+                    <img class="logot" src="../imgs/logoT_zi.png" alt="" />   
+                </a>
+            </h1>   
+        </div>
+    </header>
+    
+    <!--detailheader-->
+    <div class="detailheader">
+        <section class="container">
+            <div class="col-md-3 pdl0">
+                <div class="delogo">
+                    <figure><img src="../imgs/demo/logo2.gif" alt="" /></figure>
+                </div>
+                <span><a href="###">进入平台</a></span>    
+            </div> 
+            <div class="col-md-9 pdr0">
+                <h2>陆金所<strong>9.8</strong></h2>
+                <section class="detaillist">
+                    <dl>
+                        <dt>平均收益：</dt>
+                        <dd>12.88%</dd>
+                    </dl>
+                    <dl>
+                        <dt>投资期限：</dt>
+                        <dd>1月标（86.0%）、天标（10.7%）等</dd>
+                    </dl>
+                    <dl>
+                        <dt>注册资金：</dt>
+                        <dd>5000万元</dd>
+                    </dl>
+                    <dl>
+                        <dt>自动投标：</dt>
+                        <dd>支持</dd>
+                    </dl>
+                    <dl>
+                        <dt>债券转让：</dt>
+                        <dd>随时</dd>
+                    </dl>
+                </section>
+                <section class="detaillist">
+                    <dl>
+                        <dt>资金托管：</dt>
+                        <dd>无托管</dd>
+                    </dl>
+                    <dl>
+                        <dt>投标保障：</dt>
+                        <dd>VIP100%本金保障，非VIP享受50%本金垫付</dd>
+                    </dl>
+                    <dl>
+                        <dt>保障模式：</dt>
+                        <dd>风险准备金（8000万元）</dd>
+                    </dl>
+                    <dl>
+                        <dt>担保机构：</dt>
+                        <dd>-</dd>
+                    </dl>
+                </section>
+            </div>
+        </section>    
+    </div>
+    
+    <!--detailmainhead-->
+    <div class="detailmainhead">
+        <nav class="container">
+            <ul>
+                <li class="active"><a href="###">数据分析</a></li>
+                <li><a href="###">平台简介</a></li>
+                <li><a href="###">网站备案</a></li>
+                <li><a href="###">平台费用</a></li>
+                <li><a href="###">联系方式</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <!--detailmainsec-->
+    <div class="container overflow-xh pdl0 pdr0">
+        <div class="detailmainsec_zong">
+            <section class="container detailmainsec pdl0 pdr0 sjfx active">
+                <div class="col-md-6">
+                    <section class="pdr0"></section>
+                </div>
+                <div class="col-md-6">
+                    <section class="pdl0"></section>
+                </div>
+                <div class="col-md-12">
+                    <section></section>
+                </div>
+                <div class="col-md-12 mb0">
+                    <section></section>
+                </div>
+            </section>
+            <section class="container pdl0 pdr0 detailmainsec" style="height:300px; background-color:#f49999">2</section>
+            <section class="container pdl0 pdr0 detailmainsec" style="height:300px; background-color:#5cd882">3</section>
+            <section class="container pdl0 pdr0 detailmainsec" style="height:300px; background-color:#ac4ef2">4</section>
+            <section class="container pdl0 pdr0 detailmainsec" style="height:300px; background-color:#f4d03d">5</section>
+        </div>
+    </div>
+    
+<script type="text/javascript">
+    $(function(){      
+        $('.detailmainhead ul li').each(function(i){
+            $(this).find('a').click(function(){
+                $(this).parent('li').addClass('active').siblings('li').removeClass('active');
+                //$('.detailmainsec').eq(i).addClass('active').siblings('.detailmainsec').removeClass('active');
+                $('.detailmainsec_zong').stop().animate({ 'left':-100*i+'%' },500);
+            })    
+        })
+    })
+</script>    
+</body>
+</html>
